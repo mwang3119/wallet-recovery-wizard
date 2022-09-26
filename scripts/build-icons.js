@@ -17,6 +17,7 @@ const coins = [
   'bsv',
   'eos',
   'avax',
+  'polygon',
 ];
 
 const paths = fs

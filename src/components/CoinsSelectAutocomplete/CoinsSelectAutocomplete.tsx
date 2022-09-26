@@ -89,6 +89,12 @@ const prod = [
     Icon: 'avax',
     value: 'avaxc',
   },
+  {
+    Title: 'POLYGON',
+    Description: 'Polygon',
+    Icon: 'polygon',
+    value: 'polygon',
+  },
 ] as const;
 
 const test = [
@@ -139,6 +145,12 @@ const test = [
     Description: 'Testnet Avalanche C-Chain',
     Icon: 'avax',
     value: 'tavaxc',
+  },
+  {
+    Title: 'TPOLYGON',
+    Description: 'Testnet Polygon',
+    Icon: 'polygon',
+    value: 'tpolygon',
   },
 ] as const;
 

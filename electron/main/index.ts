@@ -16,7 +16,7 @@ import { Trx, Ttrx } from '@bitgo/sdk-coin-trx';
 import { Txlm, Xlm } from '@bitgo/sdk-coin-xlm';
 import { Txrp, Xrp } from '@bitgo/sdk-coin-xrp';
 import { Zec } from '@bitgo/sdk-coin-zec';
-import { IBaseCoin } from '@bitgo/sdk-core';
+import { Polygon, Tpolygon } from '@bitgo/sdk-coin-polygon';
 import { fromBase58 } from 'bip32';
 import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron';
 import fs from 'node:fs/promises';
@@ -72,6 +72,8 @@ sdk.register('trx', Trx.createInstance);
 sdk.register('ttrx', Ttrx.createInstance);
 sdk.register('avaxc', AvaxC.createInstance);
 sdk.register('tavaxc', TavaxC.createInstance);
+sdk.register('polygon', Polygon.createInstance);
+sdk.register('tpolygon', Tpolygon.createInstance);
 Erc20Token.createTokenConstructors().forEach(({ name, coinConstructor }) => {
   sdk.register(name, coinConstructor);
 });
